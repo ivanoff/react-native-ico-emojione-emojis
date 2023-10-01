@@ -1,6 +1,6 @@
 {
   "name": "react-native-ico-emojione-emojis",
-  "version": "4.1.4",
+  "version": "4.1.5",
   "description": "Emojione Emojis Icons for React Native",
   "main": "src/index.jsx",
   "types": "typings.d.ts",
