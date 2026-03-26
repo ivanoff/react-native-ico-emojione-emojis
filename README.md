@@ -4,7 +4,7 @@
 
 1832 Vector Icons for React Native
 
-<img src="./static/a-button.png" alt="a-button" width="150" height="150"> <img src="./static/ab-button.png" alt="ab-button" width="150" height="150"> <img src="./static/admission-tickets.png" alt="admission-tickets" width="150" height="150">
+<img src="./static/mans-shoe.png" alt="mans-shoe" width="150" height="150"> <img src="./static/index-pointing-up-medium-skin-tone.png" alt="index-pointing-up-medium-skin-tone" width="150" height="150"> <img src="./static/construction-worker-medium-skin-tone.png" alt="construction-worker-medium-skin-tone" width="150" height="150">
 
 ## List of icons
 
@@ -20,14 +20,14 @@ import Icon from 'react-native-ico-emojione-emojis';
 render() {
     return (
         <>
-          <Icon name="a-button" />
-          <Icon name="ab-button" height="40" width="40" />
-          <Icon name="admission-tickets" color="red" />
-          <Icon name="admission-tickets" colors={{ "#000000": "#FFFFFF" }} />
-          <Icon name="ab-button" badge="10" />
-          <Icon name="ab-button" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
-          <Icon name="a-button" background="circle" />
-          <Icon name="a-button" background={{ type: "button", color: 'green' }} />
+          <Icon name="mans-shoe" />
+          <Icon name="index-pointing-up-medium-skin-tone" height="40" width="40" />
+          <Icon name="construction-worker-medium-skin-tone" color="red" />
+          <Icon name="construction-worker-medium-skin-tone" colors={{ "#000000": "#FFFFFF" }} />
+          <Icon name="index-pointing-up-medium-skin-tone" badge="10" />
+          <Icon name="index-pointing-up-medium-skin-tone" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="mans-shoe" background="circle" />
+          <Icon name="mans-shoe" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -54,7 +54,9 @@ npm install --save react-native-ico-emojione-emojis react-native-svg
 react-native link react-native-svg
 ```
 
-### pod install ( for iOS )
+`react-native-svg` is a peer dependency. Install a current version in the app so the package uses the app-level native module instead of pulling in an older nested copy.
+
+### pod install (for iOS)
 
 ```
 cd ios && pod install && cd ..
@@ -68,9 +70,9 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of icon | "a-button"
+name | no |  | name of icon | "mans-shoe"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
-colors | yes | | replace colors | {"#FFFFFF": "#000000"} // white to black
+colors | yes | | replace colors | {"#FFFFFF": "#000000", "#f00": "#00f"} // white to black, red to blue
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
 background | yes | | background type | "circle"
